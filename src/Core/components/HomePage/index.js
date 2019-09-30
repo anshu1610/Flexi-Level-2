@@ -2,6 +2,7 @@ import React from "react";
 
 import Flexi from "../../../Flexi/index";
 import hoc from "../../../HocComponent/index";
+import flexConfigForHome from "./homePageConfig";
 
 class HomePage extends React.Component {
   render() {
@@ -9,7 +10,7 @@ class HomePage extends React.Component {
     return (
       <div>
         <Flexi
-          config={config.flexConfigForHome}
+          config={config}
           handleChange={handleChange}
           onSubmit={onSubmit}
         />
@@ -18,4 +19,4 @@ class HomePage extends React.Component {
   }
 }
 
-export default hoc()(HomePage);
+export default hoc(flexConfigForHome)(HomePage);

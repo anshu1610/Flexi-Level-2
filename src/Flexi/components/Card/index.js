@@ -1,9 +1,10 @@
 import React from "react";
 
-const Card = ({ props }) => {
+const Card = ({ props, child }) => {
   return (
-    <div style={props}>
+    <div style={{ background: "red", ...props }}>
       <label>{props.label}</label>
+      {child}
     </div>
   );
 };
